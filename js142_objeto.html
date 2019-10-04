@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var datosPersona= {
+				nombre: 'Luis Rodríguez',
+				nif: '44444444P',
+				direccion: 'c/ Pepe Gotera s/n',
+				poblacion: 'Barcelona'
+			}
+		console.log (datosPersona);
+		document.write('nombre y apellidos: ' + datosPersona['nombre'] +'<br>')
+		document.write('nif: '+ datosPersona.nif +'<br>') //otra alternativa	
+
+		for (i in datosPersona) {
+			document.write(i+'<---->'+datosPersona[i] +'<br>')
+			//para conocer si existe un atributo en el array
+			if (datosPersona.hasOwnProperty('nif')){
+				document.write('nif.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-: '+ datosPersona.nif +'<br>')
+
+			}
+
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
